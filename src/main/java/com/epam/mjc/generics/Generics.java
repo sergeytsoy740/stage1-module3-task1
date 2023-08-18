@@ -5,12 +5,12 @@ import java.util.List;
 
 public class Generics {
     //TODO: Refactor Method-1
-    public <T> List<List<? super T>> boxingMethod(T t) {
+    public <String> List<List<String>> boxingMethod(String name) {
 
-        List<? super T> firstList = new ArrayList<>();
-        firstList.add(t);
+        List<String> firstList = new ArrayList<>();
+        firstList.add(name);
 
-        List<List<? super T>> secondList = new ArrayList<>();
+        List<List<String>> secondList = new ArrayList<>();
         secondList.add(firstList);
 
         return secondList;
